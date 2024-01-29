@@ -19,12 +19,6 @@ instance Monoid (ResponseEquality b) where
   mempty = ResponseEquality $ \_ _ -> True
   mappend = (<>)
 
--- | Use `Eq` instance for `Response`
---
--- /Since 0.0.0.0/
-allEquality :: Eq b => ResponseEquality b
-allEquality = ResponseEquality (==)
-
 -- | ByteString `Eq` instance over the response body.
 --
 -- /Since 0.0.0.0/

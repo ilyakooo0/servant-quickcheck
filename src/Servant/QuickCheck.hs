@@ -55,7 +55,6 @@ module Servant.QuickCheck
   -- *** Useful @ResponseEquality@s
   , bodyEquality
   , jsonEquality
-  , allEquality
   -- ** Response equality type
   , ResponseEquality(..)
 
